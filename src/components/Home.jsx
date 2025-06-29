@@ -7,6 +7,7 @@ import MyEducation from "./MyEducation";
 import MyTraining from "./MyTraining";
 import HireMeForm from "./HireMeForm";
 import Projects from "./Projects";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -28,8 +29,9 @@ const Home = () => {
       <Skills />
       <MyEducation />
       <MyTraining />
-      <Projects/>
-      <HireMeForm/>
+      <Projects />
+      <HireMeForm />
+      <Footer />
     </div>
   );
 };

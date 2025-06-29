@@ -3,7 +3,6 @@ import React from "react";
 const projects = [
   {
     name: "EcoRoots – Sustainable Marketplace",
-    image: "https://i.ibb.co/smMJvM6/ecoroots.png", // Replace with your image URL
     liveLink: "https://eco-roots-ed2f9.web.app/",
     tech: ["React", "Tailwind", "Firebase", "DaisyUI"],
     details:
@@ -11,7 +10,6 @@ const projects = [
   },
   {
     name: "Take Your Car – Car Selling Platform",
-    image: "https://i.ibb.co/yNmjbFZ/takeyourcar.png", // Replace with your image URL
     liveLink: "https://take-your-car.web.app/",
     tech: ["React", "Tailwind", "Node.js", "MongoDB"],
     details:
@@ -21,7 +19,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="px-4 md:px-10 py-16 bg-base-200">
+    <div id="project" className="px-4 md:px-10 py-16 bg-base-200">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 bg-black text-white py-4 rounded-xl">
           🚀 Project Showcase
@@ -33,24 +31,17 @@ const Projects = () => {
               key={index}
               className="flex flex-col md:flex-row items-center gap-8 bg-white shadow-md rounded-lg p-6 hover:shadow-2xl transition duration-300"
             >
-              {/* Left: Image */}
-              <div className="w-full md:w-1/2 relative group cursor-pointer">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="rounded-md object-cover"
-                />
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0 bg-black bg-opacity-60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"
-                >
-                  🔗 Live Preview
-                </a>
+              {/* Left: Always show iframe */}
+              <div className="w-full md:w-1/2 relative rounded-md overflow-hidden shadow-md">
+                <iframe
+                  src={project.liveLink}
+                  title={project.name}
+                  className="w-full h-[400px] rounded-md border-none"
+                  loading="lazy"
+                ></iframe>
               </div>
 
-              {/* Right: Details */}
+              {/* Right: Project details */}
               <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
                 <h3 className="text-2xl font-semibold text-gray-800">{project.name}</h3>
                 <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -64,6 +55,18 @@ const Projects = () => {
                   ))}
                 </div>
                 <p className="text-gray-600">{project.details}</p>
+
+                {/* New Visit Site Button */}
+                <div>
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-md transition"
+                  >
+                    🔗 Visit Site
+                  </a>
+                </div>
               </div>
             </div>
           ))}

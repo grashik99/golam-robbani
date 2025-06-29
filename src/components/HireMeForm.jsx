@@ -24,7 +24,7 @@ const HireMeForm = () => {
   };
 
   return (
-    <div className="px-4 md:px-10 py-16 bg-gray-100">
+    <div id="contact" className="px-4 md:px-10 py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left side (Form) */}
         <div className="bg-white p-8 rounded-xl shadow-lg">

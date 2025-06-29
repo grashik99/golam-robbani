@@ -46,7 +46,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="py-12 my-12 px-4 md:px-10 max-w-7xl mx-auto bg-yellow-400 text-white rounded-xl">
+    <div id="skills" className="py-12 my-12 px-4 md:px-10 max-w-7xl mx-auto bg-yellow-400 text-white rounded-xl">
       <h2 className="text-3xl font-bold text-center mb-10 text-white">
         💻 My Tech Skills
       </h2>
