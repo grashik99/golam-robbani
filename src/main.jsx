@@ -4,7 +4,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./components/Home";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +13,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <div className="libertinus-mono-regular">
+      <RouterProvider router={router} />
+    </div>
   </StrictMode>
 );
