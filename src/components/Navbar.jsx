@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar w-10/12 mx-auto text-white">
       <div className="navbar-start">
-        <a className="text-xl md:text-4xl">GOLAM ROBBANI</a>
+        <a href="#" className="text-xl md:text-4xl">GOLAM ROBBANI</a>
       </div>
       <div className="navbar-end">
         <div className="dropdown dropdown-end">

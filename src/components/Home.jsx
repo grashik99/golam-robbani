@@ -12,7 +12,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="">
-      <div className="sticky top-0 z-20 bg-black/70">
+      <div className="sticky top-0 z-100 bg-black/90">
         <Navbar />
       </div>
       {/* Banner section start */}
