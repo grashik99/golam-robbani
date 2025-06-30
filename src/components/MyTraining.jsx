@@ -2,23 +2,9 @@ import React from "react";
 
 const trainingData = [
   {
-    title: "HVAC Systems Design Training",
-    organization: "National Institute of HVAC Engineers",
-    date: "March 2023",
-    description: "Completed a detailed training on HVAC system design, focusing on heat load calculations, air distribution, and energy-efficient solutions.",
-    certificate: "Completed",
-  },
-  {
-    title: "Refrigeration & Air Conditioning Maintenance",
-    organization: "Refrigeration Training Institute",
-    date: "January 2022",
-    description: "Specialized in maintaining refrigeration and air conditioning systems, including troubleshooting, repairs, and system optimization.",
-    certificate: "Completed",
-  },
-  {
     title: "Advanced Web Development Bootcamp",
-    organization: "TechCode Academy",
-    date: "August 2021",
+    organization: "Programming Hero",
+    date: "January 2025",
     description: "Developed advanced skills in full-stack web development, including working with React, Node.js, MongoDB, and Express.",
     certificate: "In Progress",
   },

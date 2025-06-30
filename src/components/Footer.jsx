@@ -25,13 +25,13 @@ const Footer = () => {
         <div className="text-center md:text-right">
           <h4 className="font-semibold mb-3">Connect</h4>
           <div className="flex justify-center md:justify-end gap-4 text-lg">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+            <a href="https://github.com/grashik99" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               🐙 GitHub
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+            <a href="https://www.linkedin.com/in/golamrobbani55/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               💼 LinkedIn
             </a>
-            <a href="mailto:your@email.com" className="hover:text-gray-300">
+            <a href="mailto:grashik99@gmail.com" className="hover:text-gray-300">
               📧 Email
             </a>
           </div>

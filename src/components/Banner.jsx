@@ -1,11 +1,11 @@
 import golam_robbani from "../assets/golam_robbani.png";
-import { CiLinkedin } from "react-icons/ci";
+import resume from "../assets/Golam_robbani_resume.pdf"
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import twitter from "../assets/twitter.png";
 const Banner = () => {
   return (
-    <div className="md:flex-row-reverse md:flex justify-evenly items-center text-black">
+    <div className="md:flex-row-reverse md:flex min-h-[70vh] justify-evenly items-center text-black">
       <div className="text-center py-10">
         <div className="avatar z-10">
           <div className="ring-primary ring-offset-base-100 w-48 md:w-72 rounded-full ring-2 ring-offset-2">
@@ -18,8 +18,8 @@ const Banner = () => {
           GOLAM ROBBANI
         </h1>
         <h3 className="text-lg md:text-2xl mb-1 md:mb-2">Web Developer</h3>
-        <p className="text-xl md:max-w-[50vw]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsam?
+        <p className="text-xl  md:max-w-[50vw]">
+          Crafting clean, responsive, and user-first web experiences. Bringing creativity and code together.
         </p>
         <div className="flex my-3 md:my-4 gap-4">
           <a
@@ -40,7 +40,7 @@ const Banner = () => {
             <img src={twitter} />
           </a>
         </div>
-        <button className="btn btn-secondary my-4">Download Resume</button>
+        <a download href={resume} className="btn btn-secondary my-4">Download Resume</a>
       </div>
     </div>
   );

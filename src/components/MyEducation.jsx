@@ -3,19 +3,19 @@ import React from "react";
 const educationData = [
   {
     degree: "Diploma in Refrigeration & Air Conditioning Technology",
-    institute: "Bogura Polytechnic Institute, Bogura",
-    year: "2018 – 2022",
-    result: "CGPA: 3.85 / 4.00",
+    institute: "Magura Polytechnic Institute, Bogura",
+    year: "2016 – 2020",
+    result: "CGPA: 3.50 / 4.00",
     details: `Learned practical and theoretical knowledge in refrigeration systems, HVAC, cooling circuits, electrical controls, installation, maintenance, and safety protocols. Participated in technical projects and hands-on lab training.`,
-    status: "Completed", // Add status here
+    status: "Completed", 
   },
   {
     degree: "Secondary School Certificate (SSC)",
-    institute: "Rashidabad High School, Bogura",
-    year: "2016 – 2018",
-    result: "GPA: 5.00 / 5.00",
+    institute: "Showaib Nagar Kamil Madrasah",
+    year: "2012 – 2014",
+    result: "GPA: 4.44 / 5.00",
     details: `Focused on science group studies including physics, chemistry, and mathematics. Built the foundation for engineering concepts and technical understanding.`,
-    status: "Completed", // Add status here
+    status: "Completed",
   },
 ];
 

@@ -15,11 +15,12 @@ const HireMeForm = () => {
       [name]: value,
     });
   };
+  // console.log(formData)
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
-    console.log("Form submitted:", formData);
+    // console.log("Form submitted:", formData);
     alert("Thank you for your inquiry! I will get back to you soon.");
   };
 
@@ -34,7 +35,10 @@ const HireMeForm = () => {
             <div className="space-y-4">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-lg font-semibold text-gray-700">
+                <label
+                  htmlFor="name"
+                  className="block text-lg font-semibold text-gray-700"
+                >
                   Name
                 </label>
                 <input
@@ -51,7 +55,10 @@ const HireMeForm = () => {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-lg font-semibold text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-lg font-semibold text-gray-700"
+                >
                   Email
                 </label>
                 <input
@@ -68,7 +75,10 @@ const HireMeForm = () => {
 
               {/* Phone */}
               <div>
-                <label htmlFor="phone" className="block text-lg font-semibold text-gray-700">
+                <label
+                  htmlFor="phone"
+                  className="block text-lg font-semibold text-gray-700"
+                >
                   Cell Phone
                 </label>
                 <input
@@ -85,7 +95,10 @@ const HireMeForm = () => {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-lg font-semibold text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-lg font-semibold text-gray-700"
+                >
                   Message
                 </label>
                 <textarea
@@ -115,28 +128,49 @@ const HireMeForm = () => {
 
         {/* Right side (Contact Info) */}
         <div className="bg-gray-200 p-8 rounded-xl shadow-lg">
-          <h2 className="text-3xl font-bold text-center mb-8">Contact Info</h2>
-          <div className="space-y-6">
-            <div className="flex items-center">
-              <svg className="w-6 h-6 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7" />
-              </svg>
-              <p className="text-lg">design@creativeRacer.net</p>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-6 h-6 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7" />
-              </svg>
-              <p className="text-lg">+012 345 678 902</p>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-6 h-6 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7" />
-              </svg>
-              <p className="text-lg">Wall Street, New York City, New York, USA</p>
-            </div>
-          </div>
-        </div>
+  <h2 className="text-3xl font-bold text-center mb-8">Contact Info</h2>
+  <div className="space-y-6">
+    
+    {/* Gmail - opens Gmail compose */}
+    <a
+      href="mailto:grashik99@gmail.com"
+      className="flex items-center hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg className="w-6 h-6 text-red-600 mr-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 13.065L2 6.5V18a2 2 0 002 2h16a2 2 0 002-2V6.5l-10 6.565zM12 11L2 4h20L12 11z" />
+      </svg>
+      <p className="text-lg">grashik99@gmail.com</p>
+    </a>
+
+    {/* Phone - click to call */}
+    <a
+      href="tel:+8801788002949"
+      className="flex items-center hover:underline"
+    >
+      <svg className="w-6 h-6 text-green-600 mr-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 010 1.414L8.414 9.414a16.02 16.02 0 006.172 6.172l2.293-2.293a1 1 0 011.414 0l2.414 2.414a1 1 0 01.293.707V19a2 2 0 01-2 2h-1c-9.389 0-17-7.611-17-17V5z" />
+      </svg>
+      <p className="text-lg">+880 17880 02949</p>
+    </a>
+
+    {/* WhatsApp - opens chat */}
+    <a
+      href="https://wa.me/8801788002949"
+      className="flex items-center hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg className="w-6 h-6 text-green-500 mr-4" fill="currentColor" viewBox="0 0 32 32">
+        <path d="M16.003 3C9.374 3 4 8.374 4 15.003c0 2.65.853 5.104 2.299 7.121L4 29l6.996-2.298A12.947 12.947 0 0016.003 27C22.63 27 28 21.63 28 15.003 28 8.374 22.63 3 16.003 3zm0 22.002c-1.844 0-3.562-.497-5.053-1.356l-.361-.209-4.148 1.364 1.371-4.031-.237-.374a10.963 10.963 0 01-1.655-5.393c0-6.075 4.946-11.021 11.022-11.021S27.025 8.928 27.025 15.003c0 6.075-4.946 11.021-11.022 11.021zm5.305-8.402c-.292-.146-1.724-.851-1.992-.948-.267-.097-.462-.145-.656.147s-.751.948-.921 1.145c-.169.195-.338.219-.63.073-.292-.147-1.234-.454-2.352-1.449-.87-.775-1.457-1.733-1.627-2.025-.169-.292-.018-.45.128-.595.132-.132.292-.34.438-.51.146-.17.195-.292.292-.487.097-.195.048-.365-.024-.51-.073-.146-.656-1.585-.899-2.168-.237-.568-.478-.492-.656-.502l-.561-.01a1.09 1.09 0 00-.79.365c-.267.292-1.01.985-1.01 2.4 0 1.414 1.034 2.781 1.177 2.97.145.195 2.033 3.098 4.928 4.341.688.296 1.223.472 1.64.603.689.219 1.315.188 1.812.114.553-.082 1.724-.703 1.969-1.38.243-.677.243-1.257.17-1.38-.072-.121-.266-.193-.558-.34z"/>
+      </svg>
+      <p className="text-lg">Chat on WhatsApp</p>
+    </a>
+
+  </div>
+</div>
+
       </div>
     </div>
   );
